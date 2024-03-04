@@ -1,0 +1,82 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Unknown Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Welcome To Unknown Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Bloxfruit Script",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Script's"
+})
+
+Tab:AddButton({
+	Name = "Hoho Hub ( Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Vector Hub ( No Key Needed )",
+	Callback = function()
+      	_G.Mode = "Eng"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/VectorHub/main/Loader.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Payback ( No Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/PayBack.lua'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Redz Hub ( No Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Alchemy Hub V2 ( No Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet("https://alchemyhub.xyz/v2"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Speed Hub V2 ( No Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "W-Azure Hub ( No Key Needed )",
+	Callback = function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Farm Chest",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Autofarm Chest Script"
+})
+
+Tab:AddButton({
+	Name = "Autofarm Chest V1",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Autochestviproo/Autochestvip/main/AutoChestxD.lua"))()
+  	end    
+})
+
+OrionLib:Init()
